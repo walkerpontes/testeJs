@@ -17,12 +17,19 @@ function valorValido(chute){
     }
     if(numero === numeroSecreto){
         document.body.innerHTML = `
-            <h1>Você acertou!!!!</h1>
+            <h1>Você acertou!!!</h1>
             <h3>O número secreto era ${numeroSecreto}</h3>
-            <button id ="bnt-jogar">Jogar novamente</button>
+            <button id="bnt-jogar">Jogar novamente</button>
+
 
         `
     }
 
-    document.querySelector('#bnt-jogar').addEventListener('click', e => window.location.reload())
+    document.body.addEventListener('click', e => {
+        console.log(e);
+        if (e.target.id == 'bnt-jogar') {
+            window.location.reload();
+        }
+    })
+
 }

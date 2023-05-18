@@ -10,7 +10,7 @@ recognition.addEventListener('result',onSpeak);
 
 function onSpeak(event){
     chute = event.results[0][0].transcript;
-    exibirMensagem(chute)
+    exibirMensagem(chute);
     valorValido(chute);
 }
 
