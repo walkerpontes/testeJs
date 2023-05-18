@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap');
+:root{
+    --font-family:'Instrument Sans', sans-serif;
+    --bg-color:#1D267D;
+    --primary-color:#D4ADFC;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+
+}
+h1{
+    font-size: 4em;
+}
+h3{
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.mensagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.box{
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+}
+#bnt-jogar{
+    padding: 20px;
+    border: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: white;
+    background: #d5adfc3a;
+}
